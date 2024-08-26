@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Text effects</title>
+    <style>
+        .one
+        {
+            width: 200px;
+            height: 100px;
+            border: 2px solid green;
+            overflow: visible;
+            text-overflow: clip;
+            padding: 20px;
+            white-space: nowrap;
+        }
+        .two
+        {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px dashed pink;
+            padding: 20px;
+            white-space: nowrap;
+        }
+        .ww
+        {
+            width: 50px;
+            height: 1050px;
+            border: 3px dotted blueviolet;
+            padding: 25px;
+            word-wrap: break-word;
+
+        }
+        .break
+        {
+            border: 1px solid red;
+            width: 300px;
+            height:300px;
+            word-break:break-word;
+            padding:10px;
+            vertical-align: ltr;
+        }
+        .keep
+        {
+            border:3px solid blueviolet;
+            width: 200%;
+            height: 100px;
+            padding: 10px;
+            word-break: keep-all;
+        }
+        .hor
+        {
+            border:3px solid blueviolet;
+            width: 200%;
+            height: 100px;
+            padding: 10px;
+            writing-mode:horizontal-tb;  
+        }
+        .ver
+        {
+            
+            writing-mode: vertical-rl;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Text over-flow property</h1>
+        <h2> clipped </h2>
+        <p class="one">
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.          
+        </p>
+        <h2> ellipses text</h2>
+        <p class="two"> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+       <h1> word wrap horizontal</h1>
+       <p class="ww">The standard chunk of Loremmmmmmmmmmmmmmmmmmmmmmmmmm Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       
+       <h2>
+        word break
+       </h2>
+       <p class="break">
+        The standard chunk of Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmm Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+       </p>
+       <p class="keep"> The standard chunk of Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmm Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+     <h1> writing mode</h1>
+       <p class="hor">
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+       </p>
+       <p class="ver">
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+       </p>
+    </body>
+</html>
